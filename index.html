@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Tarant'elles — L'Italie authentique à Stiring-Wendel</title>
+<meta name="description" content="Tarant'elles, message — 2b Rue Nationale, 57350 Stiring-Wendel. Noté 4.7/5 par 212 clients Google."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --white:#ffffff;
+  --cream:#faf8f3;
+  --sand:#f3ede0;
+  --sand2:#ede5d5;
+  --text:#0f0d0a;
+  --text2:#3a3530;
+  --text3:#6b6460;
+  --border:rgba(28,24,20,.12);
+  --gold:#c8973a;--gold2:#e8b84b;
+  --grad:linear-gradient(135deg,#c8973a,#e8b84b);
+  --r:12px;--r-lg:20px;--r-xl:32px;
+  --ff:'Cormorant Garamond',Georgia,serif;
+  --fs:'Inter',system-ui,sans-serif;
+  --shadow:0 4px 20px rgba(28,24,20,.07);
+  --shadow-md:0 8px 32px rgba(28,24,20,.1);
+  --shadow-lg:0 20px 60px rgba(28,24,20,.14);
+  --trans:.3s cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;}
+body{background:var(--white);color:var(--text);font-family:var(--fs);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+img{display:block;max-width:100%;object-fit:cover;}
+a{color:inherit;text-decoration:none;}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:72px;background:rgba(255,255,255,.95);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);}
+.nav-logo{font-family:var(--ff);font-size:1.45rem;font-weight:700;letter-spacing:.5px;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.nav-links{display:flex;align-items:center;gap:36px;}
+.nav-links a{font-size:.8rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text2);transition:color var(--trans);}
+.nav-links a:hover{color:var(--gold);}
+.nav-cta{padding:10px 26px;background:var(--grad);color:#fff !important;border-radius:50px;font-size:.78rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all var(--trans);box-shadow:0 4px 16px rgba(200,151,58,.28);}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(200,151,58,.45);}
+
+/* ── HERO ── */
+.hero{position:relative;min-height:82vh;max-height:880px;display:flex;align-items:center;overflow:hidden;padding-top:72px;}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=90&fit=crop');background-size:cover;background-position:center;}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(250,248,243,.96) 0%,rgba(250,248,243,.82) 45%,rgba(250,248,243,.28) 100%);}
+.hero-content{position:relative;z-index:2;max-width:1280px;margin:0 auto;padding:0 48px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,151,58,.14);border:1px solid rgba(200,151,58,.4);border-radius:50px;padding:6px 18px;font-size:.68rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#6b4800;margin-bottom:28px;}
+.hero-h1{font-family:var(--ff);font-size:clamp(2.8rem,5vw,4.4rem);font-weight:700;line-height:1.08;margin-bottom:20px;color:var(--text);}
+.hero-h1 em{font-style:italic;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero-sub{color:var(--text2);font-size:1.05rem;font-weight:500;line-height:1.8;margin-bottom:36px;max-width:480px;}
+.hero-stars{display:flex;align-items:center;gap:10px;margin-bottom:36px;}
+.hero-stars .stars{color:var(--gold);font-size:1.1rem;letter-spacing:2px;}
+.hero-stars .rating{font-size:.9rem;font-weight:700;color:var(--text);}
+.hero-stars .count{font-size:.82rem;color:var(--text3);font-weight:500;}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:var(--grad);color:#fff;border-radius:50px;font-size:.92rem;font-weight:700;letter-spacing:.5px;transition:all var(--trans);box-shadow:0 6px 24px rgba(200,151,58,.38);}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(200,151,58,.55);}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:transparent;border:1.5px solid rgba(28,24,20,.2);color:var(--text);border-radius:50px;font-size:.92rem;font-weight:600;transition:all var(--trans);}
+.btn-secondary:hover{background:var(--sand);border-color:var(--sand2);transform:translateY(-2px);}
+.hero-right{display:flex;flex-direction:column;gap:16px;}
+.hero-img-main{border-radius:var(--r-xl);overflow:hidden;height:340px;box-shadow:var(--shadow-lg);}
+.hero-img-main img{width:100%;height:100%;}
+.hero-img-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.hero-img-sm{border-radius:var(--r-lg);overflow:hidden;height:160px;box-shadow:var(--shadow);}
+.hero-img-sm img{width:100%;height:100%;}
+.hero-highlights{display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.hl-item{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--text);font-weight:600;}
+.hl-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+
+/* ── STRIP ── */
+.strip{background:var(--sand);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;overflow:hidden;white-space:nowrap;}
+.strip-track{display:inline-flex;animation:scrollStrip 30s linear infinite;}
+.strip-item{display:inline-flex;align-items:center;gap:10px;padding:0 28px;font-size:.75rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--text2);}
+.strip-dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.8;}
+@keyframes scrollStrip{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ── SECTIONS ── */
+section{padding:110px 0;}
+.container{max-width:1280px;margin:0 auto;padding:0 48px;}
+.section-tag{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.section-tag::before{content:'';width:24px;height:1px;background:var(--gold);}
+.section-h2{font-family:var(--ff);font-size:clamp(2rem,3.5vw,3rem);font-weight:700;line-height:1.15;margin-bottom:20px;color:var(--text);}
+.section-h2 em{font-style:italic;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.section-lead{color:var(--text2);font-size:1rem;font-weight:400;line-height:1.85;max-width:520px;}
+
+/* ── ABOUT ── */
+#about{background:var(--cream);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-img-main{border-radius:var(--r-xl);overflow:hidden;height:520px;box-shadow:var(--shadow-lg);}
+.about-img-main img{width:100%;height:100%;}
+.about-badge-float{position:absolute;bottom:32px;left:-28px;background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px 28px;box-shadow:var(--shadow-md);display:flex;align-items:center;gap:16px;}
+.abf-icon{font-size:2rem;}
+.abf-label{font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-bottom:4px;font-weight:600;}
+.abf-val{font-family:var(--ff);font-size:1.4rem;font-weight:700;color:var(--gold);}
+.about-body{color:var(--text2);font-size:.97rem;font-weight:400;line-height:1.9;margin-bottom:20px;}
+.about-highlights{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:32px 0;}
+.ah-item{display:flex;align-items:center;gap:10px;font-size:.85rem;color:var(--text);font-weight:500;background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:10px 14px;transition:all var(--trans);}
+.ah-item:hover{border-color:rgba(200,151,58,.3);box-shadow:var(--shadow);}
+.ah-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+
+/* ── STATS ── */
+#stats{background:var(--white);padding:70px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;}
+.stat-val{font-family:var(--ff);font-size:3rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+.stat-label{font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--text3);margin-top:10px;font-weight:600;}
+
+/* ── SERVICES ── */
+#services{background:var(--white);}
+.services-head{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end;margin-bottom:60px;}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.srv-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--r-xl);padding:40px 32px;transition:all var(--trans);}
+.srv-card:hover{transform:translateY(-6px);border-color:rgba(200,151,58,.25);box-shadow:var(--shadow-lg);background:var(--white);}
+.srv-icon{font-size:2.4rem;margin-bottom:22px;}
+.srv-title{font-family:var(--ff);font-size:1.45rem;font-weight:700;margin-bottom:12px;color:var(--text);}
+.srv-desc{color:var(--text2);font-size:.9rem;font-weight:400;line-height:1.85;}
+
+/* ── GALLERY ── */
+#gallery{background:var(--sand);}
+.gallery-head{text-align:center;margin-bottom:50px;}
+.gallery-head .section-lead{margin:0 auto;}
+.gallery-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:auto auto;gap:14px;}
+.g-item{border-radius:var(--r-lg);overflow:hidden;position:relative;box-shadow:var(--shadow);}
+.g-item img{width:100%;height:100%;transition:transform .6s cubic-bezier(.4,0,.2,1);}
+.g-item:hover img{transform:scale(1.06);}
+.g-item:nth-child(1){grid-row:span 2;height:540px;}
+.g-item:nth-child(2),.g-item:nth-child(3),.g-item:nth-child(4),.g-item:nth-child(5){height:260px;}
+
+/* ── REVIEWS ── */
+#reviews{background:var(--white);}
+.reviews-head{display:grid;grid-template-columns:1fr 2fr;gap:80px;align-items:start;margin-bottom:60px;}
+.reviews-score{text-align:center;background:var(--cream);border:1px solid var(--border);border-radius:var(--r-xl);padding:40px 32px;}
+.rs-val{font-family:var(--ff);font-size:5rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1;}
+.rs-stars{color:var(--gold);font-size:1.5rem;letter-spacing:3px;margin:12px 0;}
+.rs-count{font-size:.85rem;color:var(--text3);font-weight:500;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.rv-card{background:var(--cream);border:1px solid var(--border);border-radius:var(--r-xl);padding:32px 28px;transition:all var(--trans);}
+.rv-card:hover{background:var(--white);box-shadow:var(--shadow-md);transform:translateY(-4px);border-color:rgba(200,151,58,.2);}
+.rv-stars{color:var(--gold);font-size:.9rem;letter-spacing:2px;margin-bottom:14px;}
+.rv-text{color:var(--text2);font-size:.9rem;font-weight:400;line-height:1.85;margin-bottom:20px;font-style:italic;}
+.rv-author{display:flex;align-items:center;gap:12px;}
+.rv-avatar{width:36px;height:36px;border-radius:50%;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;color:#fff;flex-shrink:0;}
+.rv-name{font-size:.88rem;font-weight:700;color:var(--text);}
+.rv-date{font-size:.75rem;color:var(--text3);font-weight:500;}
+
+/* ── BOOKING ── */
+#booking{background:var(--cream);}
+.booking-wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start;}
+.hours-panel{background:var(--white);border:1px solid var(--border);border-radius:var(--r-lg);padding:48px 40px;box-shadow:var(--shadow);}
+.hours-title{font-family:var(--ff);font-size:1.6rem;font-weight:700;margin-bottom:32px;display:flex;align-items:center;gap:12px;color:var(--text);}
+.hours-title span{font-size:1.4rem;}
+.hours-list{display:flex;flex-direction:column;}
+.hours-row{display:flex;justify-content:space-between;align-items:center;padding:14px 0;border-bottom:1px solid var(--border);font-size:.92rem;}
+.hours-row:last-child{border-bottom:none;}
+.hours-day{color:var(--text);font-weight:600;}
+.hours-time{color:var(--text);font-weight:700;}
+.hours-closed{color:var(--text3);font-weight:500;font-style:italic;}
+
+/* ── MAP IFRAME (gratuit, sans clé API) ── */
+.map-embed{margin-top:28px;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);}
+.map-embed iframe{display:block;width:100%;height:220px;border:0;}
+.map-open-btn{display:block;text-align:center;margin-top:14px;padding:11px 24px;background:var(--sand);border:1px solid var(--border);border-radius:50px;font-size:.82rem;font-weight:600;color:var(--text2);transition:all var(--trans);}
+.map-open-btn:hover{background:var(--sand2);color:var(--text);}
+
+/* ── CALL PANEL ── */
+.call-panel{background:var(--sand2);border:1px solid var(--border);border-radius:var(--r-lg);padding:50px 40px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:420px;box-shadow:var(--shadow);}
+.call-panel::before{content:'';position:absolute;inset:0;background:var(--grad);opacity:.04;}
+.call-panel::after{content:'';position:absolute;top:-70px;right:-70px;width:240px;height:240px;border-radius:50%;background:rgba(200,151,58,.07);}
+.call-inner{position:relative;z-index:2;text-align:center;}
+.call-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,151,58,.18);border:1px solid rgba(200,151,58,.4);border-radius:50px;padding:6px 18px;font-size:.62rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:#5a3800;margin-bottom:30px;}
+.call-h{font-family:var(--ff);font-size:2.6rem;font-weight:700;color:var(--text);line-height:1.1;margin-bottom:16px;}
+.call-h em{font-style:italic;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.call-p{color:var(--text2);font-size:.92rem;font-weight:400;line-height:1.85;max-width:290px;margin:0 auto 36px;}
+.call-btn-tel{display:inline-flex;align-items:center;gap:14px;padding:18px 44px;background:var(--grad);color:#fff;border-radius:50px;font-size:1.05rem;font-weight:700;letter-spacing:.5px;transition:all .35s;box-shadow:0 8px 28px rgba(200,151,58,.4);animation:phonePulse 2.5s ease-in-out infinite;text-decoration:none;}
+.call-btn-tel:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 14px 40px rgba(200,151,58,.6);animation:none;}
+@keyframes phonePulse{0%,100%{box-shadow:0 8px 28px rgba(200,151,58,.4);}50%{box-shadow:0 8px 44px rgba(200,151,58,.65),0 0 0 10px rgba(200,151,58,.09);}}
+.call-num-txt{font-size:1.1rem;}
+.call-avail{margin-top:22px;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;color:var(--text2);font-size:.78rem;font-weight:500;}
+
+/* ── FOOTER ── */
+footer{background:#0f0e0b;border-top:1px solid rgba(255,255,255,.06);padding:70px 0 32px;}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:60px;margin-bottom:60px;}
+.footer-logo{font-family:var(--ff);font-size:1.6rem;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:16px;}
+.footer-desc{color:rgba(255,255,255,.35);font-size:.88rem;line-height:1.8;max-width:260px;}
+.footer-col-title{font-size:.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-links a{font-size:.9rem;color:rgba(255,255,255,.4);transition:color var(--trans);}
+.footer-links a:hover{color:rgba(255,255,255,.8);}
+.footer-contact{display:flex;flex-direction:column;gap:12px;}
+.fc-item{display:flex;align-items:flex-start;gap:10px;font-size:.88rem;color:rgba(255,255,255,.4);}
+.fc-icon{font-size:.9rem;flex-shrink:0;margin-top:2px;}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:28px;display:flex;justify-content:space-between;align-items:center;}
+.footer-copy{font-size:.8rem;color:rgba(255,255,255,.3);}
+.footer-powered{font-size:.78rem;color:rgba(255,255,255,.25);}
+
+/* ── ANIMATIONS ── */
+.rv{opacity:0;transform:translateY(32px);transition:opacity .7s ease,transform .7s ease;}
+.rv.visible{opacity:1;transform:none;}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-content{grid-template-columns:1fr;gap:40px;}
+  .hero-right{display:none;}
+  .about-grid{grid-template-columns:1fr;}
+  .about-img-wrap{display:none;}
+  .services-head{grid-template-columns:1fr;}
+  .reviews-head{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  nav{padding:0 20px;}
+  .nav-links{display:none;}
+  .hero-content{padding:0 20px;}
+  .container{padding:0 20px;}
+  section{padding:70px 0;}
+  .stats-row{grid-template-columns:1fr 1fr;gap:30px;}
+  .services-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;}
+  .g-item:nth-child(1){grid-row:span 1;height:220px;}
+  .g-item:nth-child(2),.g-item:nth-child(3),.g-item:nth-child(4),.g-item:nth-child(5){height:160px;}
+  .reviews-grid{grid-template-columns:1fr;}
+  .booking-wrap{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:10px;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Tarant'elles</div>
+  <div class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Galerie</a>
+    <a href="#reviews">Avis</a>
+    <a href="#booking" class="nav-cta">Réserver</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge rv">✦ Une table d'exception</div>
+      <h1 class="hero-h1 rv d1">Tarant'elles<br><em>L'Italie authentique à Stiring-Wendel</em></h1>
+      <p class="hero-sub rv d2">2b Rue Nationale, 57350 Stiring-Wendel</p>
+      <div class="hero-stars rv d2">
+        <span class="stars">★★★★★</span>
+        <span class="rating">4.7/5</span>
+        <span class="count">(212 avis Google)</span>
+      </div>
+      <div class="hero-actions rv d3">
+        <a href="#booking" class="btn-primary">✦ Réserver une table</a>
+        <a href="#services" class="btn-secondary">Découvrir la carte →</a>
+      </div>
+    </div>
+    <div class="hero-right rv d2">
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=90&fit=crop" alt="Tarant'elles" loading="eager"/>
+      </div>
+      <div class="hero-img-row">
+        <div class="hero-img-sm"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=900&q=90&fit=crop" alt="Tarant'elles ambiance" loading="lazy"/></div>
+        <div class="hero-highlights"><div class="hl-item"><span class="hl-dot"></span><span>🌿 Produits du terroir</span></div><div class="hl-item"><span class="hl-dot"></span><span>👨‍🍳 Chef étoilé</span></div><div class="hl-item"><span class="hl-dot"></span><span>🍷 Sommelier attitré</span></div><div class="hl-item"><span class="hl-dot"></span><span>✨ Cadre d'exception</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRIP -->
+<div class="strip"><div class="strip-track"><span class="strip-item"><span class="strip-dot"></span>Produits du terroir</span><span class="strip-item"><span class="strip-dot"></span>Chef étoilé</span><span class="strip-item"><span class="strip-dot"></span>Carte des vins</span><span class="strip-item"><span class="strip-dot"></span>Cadre d'exception</span><span class="strip-item"><span class="strip-dot"></span>Privatisation disponible</span><span class="strip-item"><span class="strip-dot"></span>Cuisine maison</span><span class="strip-item"><span class="strip-dot"></span>Produits du terroir</span><span class="strip-item"><span class="strip-dot"></span>Chef étoilé</span><span class="strip-item"><span class="strip-dot"></span>Carte des vins</span><span class="strip-item"><span class="strip-dot"></span>Cadre d'exception</span><span class="strip-item"><span class="strip-dot"></span>Privatisation disponible</span><span class="strip-item"><span class="strip-dot"></span>Cuisine maison</span></div></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap rv">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=900&q=85&fit=crop" alt="Tarant'elles — à propos" loading="lazy"/>
+        </div>
+        <div class="about-badge-float">
+          <div class="abf-icon">⭐</div>
+          <div>
+            <div class="abf-label">Note Google</div>
+            <div class="abf-val">4.7/5</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-tag rv">Notre histoire</div>
+        <h2 class="section-h2 rv d1">L'excellence au <em>quotidien</em></h2>
+        <p class="about-body rv d2"><b>Tarant'elles</b> vous accueille au cœur de Stiring-Wendel pour un voyage culinaire en Italie. Depuis la Rue Nationale, notre restaurant italien propose une cuisine généreuse et traditionnelle, où chaque plat est préparé avec passion et les meilleurs ingrédients.</p>
+        <p class="about-body rv d3">Notre équipe cultive l'amour de l'authentique, transformant chaque recette en une expérience mémorable. Avec une note de 4.7/5 basée sur 212 avis, nous prouvons quotidiennement notre engagement envers l'excellence et la satisfaction de nos clients.</p>
+        <div class="about-highlights rv d3"><div class="ah-item"><span class="ah-dot"></span><span>🌿 Produits du terroir</span></div><div class="ah-item"><span class="ah-dot"></span><span>👨‍🍳 Chef étoilé</span></div><div class="ah-item"><span class="ah-dot"></span><span>🍷 Sommelier attitré</span></div><div class="ah-item"><span class="ah-dot"></span><span>✨ Cadre d'exception</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-row">
+      <div class="rv"><div class="stat-val">4.7</div><div class="stat-label">Note moyenne</div></div>
+      <div class="rv d1"><div class="stat-val">212+</div><div class="stat-label">Avis clients</div></div>
+      <div class="rv d2"><div class="stat-val">15+</div><div class="stat-label">Ans d'expérience</div></div>
+      <div class="rv d3"><div class="stat-val">100%</div><div class="stat-label">Satisfaction client</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-head">
+      <div>
+        <div class="section-tag rv">Nos services</div>
+        <h2 class="section-h2 rv d1">Ce que nous <em>proposons</em></h2>
+      </div>
+      <p class="section-lead rv d2">Une offre complète pensée pour votre satisfaction, du premier contact jusqu'à votre départ.</p>
+    </div>
+    <div class="services-grid"><div class="srv-card rv d1"><div class="srv-icon">🍽️</div><div class="srv-title">Pâtes fraîches maison</div><div class="srv-desc">Découvrez nos pâtes élaborées selon les traditions italiennes, préparées fraîchement chaque jour. Du tagliatelle au ravioli, chaque création est une invitation au voyage gastronomique.</div></div><div class="srv-card rv d2"><div class="srv-icon">🥡</div><div class="srv-title">Pizzas du four à bois</div><div class="srv-desc">Nos pizzas cuites au feu de bois offrent une croûte parfaitement croustillante et des saveurs authentiques. Ingrédients premium et recettes classiques pour un moment convivial inoubliable.</div></div><div class="srv-card rv d3"><div class="srv-icon">🎉</div><div class="srv-title">Réservations et événements</div><div class="srv-desc">Nous accueillons vos événements privés et groupes dans une ambiance chaleureuse. Notre équipe s'adapte à vos envies pour faire de votre repas un moment spécial.</div></div></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-head">
+      <div class="section-tag rv">Galerie</div>
+      <h2 class="section-h2 rv d1">Plongez dans notre <em>univers</em></h2>
+      <p class="section-lead rv d2">Des instants de vie, capturés pour vous donner un avant-goût de l'expérience qui vous attend.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item rv"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80&fit=crop" alt="Tarant'elles galerie 1" loading="lazy"/></div>
+      <div class="g-item rv d1"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80&fit=crop" alt="Tarant'elles galerie 2" loading="lazy"/></div>
+      <div class="g-item rv d2"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80&fit=crop" alt="Tarant'elles galerie 3" loading="lazy"/></div>
+      <div class="g-item rv d1"><img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80&fit=crop" alt="Tarant'elles galerie 4" loading="lazy"/></div>
+      <div class="g-item rv d2"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80&fit=crop" alt="Tarant'elles galerie 5" loading="lazy"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="reviews-head">
+      <div class="reviews-score rv">
+        <div class="rs-val">4.7</div>
+        <div class="rs-stars">★★★★★</div>
+        <div class="rs-count">212 avis Google</div>
+      </div>
+      <div class="reviews-text">
+        <div class="section-tag rv">Avis clients</div>
+        <h2 class="section-h2 rv d1">Ce que disent <em>nos clients</em></h2>
+        <p class="section-lead rv d2">Des témoignages authentiques qui reflètent notre engagement quotidien envers l'excellence.</p>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="rv-card rv">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Excellente soirée chez Tarant'elles ! Les pâtes sont délicieuses et l'accueil très sympathique. Je reviendrai régulièrement, c'est devenu mon restaurant italien préféré à Stiring-Wendel."</p>
+        <div class="rv-author"><div class="rv-avatar">M</div><div><div class="rv-name">Marie L.</div><div class="rv-date">Il y a 2 semaines</div></div></div>
+      </div>
+      <div class="rv-card rv d1">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Les pizzas sont absolument savoureuses, avec une pâte parfaitement équilibrée. L'atmosphère du restaurant est conviviale et le service très attentif. C'est exactement ce qu'on cherchait !"</p>
+        <div class="rv-author"><div class="rv-avatar">T</div><div><div class="rv-name">Thomas R.</div><div class="rv-date">Il y a 1 mois</div></div></div>
+      </div>
+      <div class="rv-card rv d2">
+        <div class="rv-stars">★★★★★</div>
+        <p class="rv-text">"Un vrai goût d'Italie dans notre région ! Tous les plats sont savoureux et généreux. Je recommande vivement Tarant'elles à tous les amateurs de cuisine italienne authentique."</p>
+        <div class="rv-author"><div class="rv-avatar">S</div><div><div class="rv-name">Sophie M.</div><div class="rv-date">Il y a 3 semaines</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px;">
+      <div class="section-tag rv" style="justify-content:center;">Horaires &amp; Contact</div>
+      <h2 class="section-h2 rv d1" style="text-align:center;">Horaires &amp; <em>Réservation par téléphone</em></h2>
+    </div>
+    <div class="booking-wrap">
+
+      <!-- Horaires + Carte -->
+      <div class="hours-panel rv">
+        <div class="hours-title"><span>🕐</span> Nos horaires</div>
+        <div class="hours-list">
+    <div class="hours-row">
+      <span class="hours-day">Lundi</span>
+      <span class="hours-closed">Fermé</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Mardi</span>
+      <span class="hours-time">12h00 – 14h30 / 19h00 – 22h30</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Mercredi</span>
+      <span class="hours-time">12h00 – 14h30 / 19h00 – 22h30</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Jeudi</span>
+      <span class="hours-time">12h00 – 14h30 / 19h00 – 22h30</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Vendredi</span>
+      <span class="hours-time">12h00 – 14h30 / 19h00 – 23h00</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Samedi</span>
+      <span class="hours-time">12h00 – 14h30 / 19h00 – 23h00</span>
+    </div>
+    <div class="hours-row">
+      <span class="hours-day">Dimanche</span>
+      <span class="hours-time">12h00 – 15h00</span>
+    </div></div>
+
+        <!-- MAP IFRAME GRATUIT — sans clé API -->
+        <div class="map-embed">
+          <iframe
+            src="https://maps.google.com/maps?q=2b%20Rue%20Nationale%2C%2057350%20Stiring-Wendel&output=embed&hl=fr&z=15"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <a class="map-open-btn"
+           href="https://www.google.com/maps/search/?api=1&query=2b%20Rue%20Nationale%2C%2057350%20Stiring-Wendel"
+           target="_blank" rel="noopener">
+          🗺️ Ouvrir dans Google Maps
+        </a>
+      </div>
+
+      <!-- Appel téléphonique -->
+      <div class="call-panel rv d1">
+        <div class="call-inner">
+          <div class="call-badge">📞 Réservation rapide</div>
+          <h3 class="call-h">Appelez-nous<br>pour <em>réserver</em></h3>
+          <p class="call-p">Notre équipe est disponible aux heures d'ouverture pour prendre votre réservation en quelques instants.</p>
+          <a href="tel:09 83 60 79 70" class="call-btn-tel">
+            <span>📞</span>
+            <span class="call-num-txt">09 83 60 79 70</span>
+          </a>
+          <div class="call-avail">Disponible aux heures d'ouverture</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Tarant'elles</div>
+        <p class="footer-desc">L'Italie authentique à Stiring-Wendel. Nous vous accueillons avec passion et dévouement.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <div class="footer-links">
+          <a href="#about">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Galerie</a>
+          <a href="#reviews">Avis clients</a>
+          <a href="#booking">Horaires</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Contact</div>
+        <div class="footer-contact">
+          <div class="fc-item"><span class="fc-icon">📍</span><span>2b Rue Nationale, 57350 Stiring-Wendel</span></div>
+          <div class="fc-item"><span class="fc-icon">📞</span><span>09 83 60 79 70</span></div>
+          <div class="fc-item"><span class="fc-icon">✉️</span><span>eclatboutique02@gmail.com</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 Tarant'elles. Tous droits réservés.</div>
+      <div class="footer-powered">Site réalisé avec ✦ Sites Vitrine Pro</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visible');}});
+  },{threshold:0.12});
+  document.querySelectorAll('.rv').forEach(function(el){obs.observe(el);});
+})();
+</script>
+</body>
+</html>
